@@ -67,11 +67,7 @@ body {
   font-family: "satoshi-reg";
 }
 
-.statement-section {
-  /* background: url(./images/second-bg.avif) no-repeat; */
-  background-size: cover;
-  background-position: top;
-}
+
 
 .elegant{
   font-family: "elegant",sans-serif;
@@ -206,21 +202,7 @@ body {
   text-decoration: underline;
 }
 
-.bounce-star {
-  animation: bounce 2s infinite ease-in-out 2s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px); /* Adjust the height of the bounce */
-  }
-}
 
 .statement-2 {
   transition: transform 1s ease, opacity 0.5s ease;

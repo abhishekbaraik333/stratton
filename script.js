@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
@@ -86,7 +84,6 @@ document.querySelector(".sliding-div").addEventListener("click", (event) => {
   }
 });
 
-// script.js
 document.getElementById("copyButton").addEventListener("click", function () {
   const email = this.getAttribute("data-email");
   const temporaryInput = document.createElement("input");
@@ -104,24 +101,34 @@ document.getElementById("copyButton").addEventListener("click", function () {
   }, 2000);
 });
 
+gsap.from(".elegant",{
+  y:-50,
+  opacity:0,
+  duration:1
+})
+gsap.from(".hero-ul li",{
+  y:-50,
+  opacity:0,
+  duration:1
+})
 
 // IntersectionObserver configuration
 const observerOptions = {
   root: null, // Default is the viewport
-  rootMargin: '0px',
-  threshold: 0.1 // Trigger when 10% of the element is visible
+  rootMargin: "0px",
+  threshold: 0.1, // Trigger when 10% of the element is visible
 };
 
 // IntersectionObserver callback function
 const animateElements = (entry) => {
-  if (entry.target.classList.contains('bounce-star')) {
+  if (entry.target.classList.contains("bounce-star")) {
     gsap.from(entry.target, {
       rotation: 360,
       y: 100,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('starise')) {
+  } else if (entry.target.classList.contains("starise")) {
     gsap.from(entry.target, {
       rotation: -30,
       scale: 0.3,
@@ -129,7 +136,8 @@ const animateElements = (entry) => {
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('logo')) {
+  } 
+  else if (entry.target.classList.contains("logo")) {
     gsap.from(entry.target, {
       rotation: 30,
       scale: 0.3,
@@ -137,81 +145,81 @@ const animateElements = (entry) => {
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('hero-ul')) {
-    gsap.from(entry.target.querySelectorAll('li'), {
+  } else if (entry.target.classList.contains("hero-ul")) {
+    gsap.from(entry.target.querySelectorAll("li"), {
       y: -50,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('sub-text')) {
+  } else if (entry.target.classList.contains("sub-text")) {
     gsap.from(entry.target, {
       y: -50,
       delay: 0.5,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('home-btn2')) {
+  } else if (entry.target.classList.contains("home-btn2")) {
     gsap.from(entry.target, {
       y: 50,
       delay: 0.9,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('home-btn1')) {
+  } else if (entry.target.classList.contains("home-btn1")) {
     gsap.from(entry.target, {
       y: 50,
       delay: 0.7,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('about')) {
+  } else if (entry.target.classList.contains("about")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('bar')) {
+  } else if (entry.target.classList.contains("bar")) {
     gsap.from(entry.target, {
       x: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('service-heading')) {
+  } else if (entry.target.classList.contains("service-heading")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('bar2')) {
+  } else if (entry.target.classList.contains("bar2")) {
     gsap.from(entry.target, {
       x: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('qoute1')) {
+  } else if (entry.target.classList.contains("qoute1")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('qoute2')) {
+  } else if (entry.target.classList.contains("qoute2")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
       delay: 0.5,
     });
-  } else if (entry.target.classList.contains('seul')) {
+  } else if (entry.target.classList.contains("seul")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('ensemble')) {
+  } else if (entry.target.classList.contains("ensemble")) {
     gsap.from(entry.target, {
       y: -50,
       opacity: 0,
       duration: 1,
     });
-  } else if (entry.target.classList.contains('flip-div')) {
+  } else if (entry.target.classList.contains("flip-div")) {
     gsap.to(entry.target, {
       opacity: 1,
       rotateX: 0,
@@ -223,7 +231,7 @@ const animateElements = (entry) => {
 
 // Create the IntersectionObserver
 const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       animateElements(entry);
       observer.unobserve(entry.target); // Optional: stop observing after animation is triggered
@@ -232,7 +240,10 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, observerOptions);
 
 // Target all elements for observation
-document.querySelectorAll('.bounce-star, .starise, .logo, .hero-ul li, .sub-text, .home-btn2, .home-btn1, .about, .bar, .service-heading, .bar2, .qoute1, .qoute2, .seul, .ensemble, .flip-div').forEach(el => {
-  observer.observe(el);
-});
-
+document
+  .querySelectorAll(
+    ".bounce-star, .starise, .logo, .hero-ul li, .sub-text, .home-btn2, .home-btn1, .about, .bar, .service-heading, .bar2, .qoute1, .qoute2, .seul, .ensemble, .flip-div"
+  )
+  .forEach((el) => {
+    observer.observe(el);
+  });
