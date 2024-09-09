@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starise Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#024BAC',
+                        secondary: "#d2deef",
+                        third: "#4a8ee8",
+                        bgcolor: "#f4f7f9",
+                        bgcolor2: "#e6ebf2"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="">
+
+    <main class="h-[80vh] lg:h-[60vh] w-full relative">
+        <div
+            class="fixed top-5 lg:hidden cross-container right-5 fixed z-[101] bg-primary rounded-full h-[30px] w-[30px] p-6 flex justify-center items-center">
+            <i class="fa-solid fa-xmark text-xl opacity-90 rotate-45 text-white xcross"></i>
+        </div>
+
+        <div class="sliding-div fixed top-0 px-10 right-0 h-full bg-primary z-[100] w-[80%]">
+            <ul class="gap-5 w-full justify-center lg:hidden flex flex-col text-white font-semibold text-2xl mt-20">
+                <li><a href="#about">À PROPOS</a></li>
+                <li><a href="#results">RESULTATS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="h-[1px] bg-white w-[100%] mt-10"></div>
+            <div class="text-lg mt-10 font-medium text-white mx-auto">
+                starise.agency@gmail.com
+            </div>
+            <button id="copyButton" class="copy-btn" data-email="starise@gmail.com">Copy Email</button>
+
+            <div class="flex gap-10 items-center mt-16">
+                <a href="">
+                    <i class="fa-brands fa-twitter opacity-90 text-white scale-[2]"></i><span
+                        class="hover:underline "></span>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram opacity-90 text-white scale-[2] "></i><span
+                        class="hover:underline"></span>
+                </a>
+            </div>
+        </div>
+
+        <video src="./bg-video.mp4" autoplay loop muted class="w-full bg-video absolute top-0 z-[-1]"></video>
+        <div class="bg-primary h-[1vh]"></div>
+        <ul class="hero-ul overflow-hidden gap-10 mt-3 w-full justify-center hidden lg:flex">
+            <li><a href="#about">À PROPOS</a></li>
+            <li><a href="#results">RESULTATS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div
+            class="flex m-auto flex-col h-[100%] lg:w-[55rem] w-[20rem] md:w-[30rem] justify-center items-center lg:px-8 text-center">
+            <div
+                class="flex items-center relative justify-end w-full lg:pr-16 top-0 md:top-0 pr-8  md:pr-16 lg:top-0 md:gap-4 gap-3 justify-end">
+                <!-- <img src="./images/star.svg" class="lg:w-[60px] w-[25px] bounce-star" alt=""> -->
+                <p class="lg:text-[42px] md:text-[28px] tracking-light text-third">agency</p>
+            </div>
+            <h1 class="flex gap-3 overflow-hidden items-end">
+                <img src="./images/stratton-logo.svg" class="lg:w-[65px] md:w-[35px] w-[25px] logo" alt="">
+                <img src="./images/stratton-text.svg" class="lg:w-[600px] w-[220px] md:w-[300px] starise" alt="">
+            </h1>
+            <div class="overflow-hidden">
+                <h3 class=" text-[16px] md:text-[27px] text-third sub-text">
+                    Maximisez vos gains <span class="font-bold">MYM</span> et <span class="font-bold">ONLYFANS</span>
+                    immédiatement
+                </h3>
+                <div class="flex justify-center gap-5 mt-3">
+                    <button class=" home-buttons home-btn1 text-[14px] md:text-[19px] py-[5px] px-[20px] hover:px-[14px] hover:bg-[#99beef] ease"
+                        href="#about">EN SAVOIR PLUS</button>
+                    <button class=" home-buttons home-btn2 text-[14px] md:text-[19px] py-[5px] px-[20px] hover:px-[14px] hover:bg-[#99beef] ease"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdM-LPNng0rYd0wpM9icCoDFK3Rm7VzgrNiqEfA6CjumZm6Og/viewform">REJOINDRE</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class=" scale-[250%] md:scale-[100%] md:w-full relative lottie-div mt-10 lg:mt-10 flex justify-center ">
+        <dotlottie-player src="https://framerusercontent.com/assets/H6aKGwkgmSHutsWX2cadUljAV2A.zip"
+            class="animation flex justify-start" autoplay="true" loop="" background="rgba(0, 85, 255, 0)"
+            style="max-height: 100%;max-width: 100%;" speed="1" direction="1">
+            <div class="flex justify-center" id="animation-container" lang="en" role="img" class="main">
+                <div id="animation" class="animation flex justify-center" style="background:rgba(0, 85, 255, 0);">
+                    <!--?lit$835494772$-->
+                    <svg class="dot md:w-full h-full" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921 522" width="1921" height="522"
+                        preserveAspectRatio="xMidYMid meet"
+                        style=" transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+                        <defs>
+                            <clipPath id="__lottie_element_2">
+                                <rect width="1921" height="522" x="0" y="0"></rect>
+                            </clipPath>
+                            <image
+                                xlink:href="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAEnCAYAAACOvuJSAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAAZ0lEQVRYhe3RsQ2AQAxDUcP1COl6ShDbMBKbsRrtmVQpUJTIr3T35QYA17bfx9Kfc+3TjI9fhiANUO1Acd4hiGpZ4trScYZqWeLa0nGGalni2tJxhmqZar1DEF3JVOsdguhKplrvYLyvRTYzE/bTjAAAAABJRU5ErkJggg==">
+                            </image>
+                            <symbol id="__lottie_element_9">
+                                <g>
+                                    <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,-94.75)">
+                                            <path fill="rgb(79,29,38)" fill-opacity="1"
+                                                d=" M23,-77.25 C23,-77.25 23,77.25 23,77.25 C23,77.25 -23,77.25 -23,77.25 C-23,77.25 -23,-77.25 -23,-77.25 C-23,-77.25 23,-77.25 23,-77.25z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </symbol>
+                            <mask id="__lottie_element_9_1" mask-type="alpha">
+                                <use xlink:href="#__lottie_element_9"></use>
+                            </mask>
+                        </defs>
+                        <g clip-path="url(#__lottie_element_2)">
+                            <g transform="matrix(1,0,0,1,961.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,-0.5619999766349792,-180.81199645996094)">
+                                    <path fill="rgb(79,29,38)" fill-opacity="1"
+                                        d=" M0,-18.5625 C10.244644165039062,-18.5625 18.5625,-10.244644165039062 18.5625,0 C18.5625,10.244644165039062 10.244644165039062,18.5625 0,18.5625 C-10.244644165039062,18.5625 -18.5625,10.244644165039062 -18.5625,0 C-18.5625,-10.244644165039062 -10.244644165039062,-18.5625 0,-18.5625z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g mask="url(#__lottie_element_9_1)" style="display: block;">
+                                <g class="png" transform="matrix(1,0,0,1,959.5,-48.07539367675781)" opacity="1">
+                                    <image width="3px" height="295px" preserveAspectRatio="xMidYMid slice"
+                                        xlink:href="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAEnCAYAAACOvuJSAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAAZ0lEQVRYhe3RsQ2AQAxDUcP1COl6ShDbMBKbsRrtmVQpUJTIr3T35QYA17bfx9Kfc+3TjI9fhiANUO1Acd4hiGpZ4trScYZqWeLa0nGGalni2tJxhmqZar1DEF3JVOsdguhKplrvYLyvRTYzE/bTjAAAAABJRU5ErkJggg==">
+                                    </image>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <path fill="rgb(239,203,209)" fill-opacity="1"
+                                        d=" M-800.25,-225.5 C-800.25,-225.5 -961.375,-163.75 -961.375,-163.75 C-961.375,-163.75 -968.5,-43 -968.5,-43 C-968.5,-43 -800.5,-36 -800.5,-36 C-800.5,-36 -613.5,-11 -613.5,-11 C-613.5,-11 -389.5,-7 -389.5,-7 C-389.5,-7 -172.5,-4 -172.5,-4 C-172.5,-4 -113.75,-32.25 -113.75,-32.25 C-113.75,-32.25 -162.25,-61.75 -162.25,-61.75 C-162.25,-61.75 -259.25,-61.75 -259.25,-61.75 C-259.25,-61.75 -384,-123 -384,-123 C-384,-123 -599.75,-123 -599.75,-123 C-599.75,-123 -800.25,-225.5 -800.25,-225.5z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <path fill="rgb(249,222,227)" fill-opacity="1"
+                                        d=" M-844.5,-118.5 C-844.5,-118.5 -964.75,-79 -964.75,-79 C-964.75,-79 -978.5,6.5 -978.5,6.5 C-978.5,6.5 -961.5,50 -961.5,50 C-961.5,50 -635.5,35.5 -635.5,35.5 C-635.5,35.5 -531.75,-20.25 -531.75,-20.25 C-531.75,-20.25 -588,-56.5 -588,-56.5 C-588,-56.5 -746.5,-63.5 -746.5,-63.5 C-746.5,-63.5 -844.5,-118.5 -844.5,-118.5z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <path fill="rgb(255,235,238)" fill-opacity="1"
+                                        d=" M884,-260.5 C884,-260.5 829.75,-193.75 829.75,-193.75 C829.75,-193.75 762.25,-182.5 762.25,-182.5 C762.25,-182.5 712.5,-126.25 712.5,-126.25 C712.5,-126.25 594.75,-153 594.75,-153 C594.75,-153 417.25,-103 417.25,-103 C417.25,-103 300.75,-118.5 300.75,-118.5 C300.75,-118.5 142.5,-39.75 142.5,-39.75 C142.5,-39.75 -41,-62.25 -41,-62.25 C-41,-62.25 -146.5,-29.5 -146.5,-29.5 C-146.5,-29.5 -335.5,-19.5 -335.5,-19.5 C-335.5,-19.5 -476.75,-39 -476.75,-39 C-476.75,-39 -697.5,6.5 -697.5,6.5 C-697.5,6.5 -813.25,-22 -813.25,-22 C-813.25,-22 -967.75,31.25 -967.75,31.25 C-967.75,31.25 -972.5,87 -972.5,87 C-972.5,87 -750.5,91 -750.5,91 C-750.5,91 1027.5,35 1027.5,35 C1027.5,35 962.75,-243 962.75,-243 C962.75,-243 884,-260.5 884,-260.5z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <path fill="rgb(237,204,210)" fill-opacity="1"
+                                        d=" M945.5,-180.5 C945.5,-180.5 894.5,-106.5 894.5,-106.5 C894.5,-106.5 798,-99 798,-99 C798,-99 655,-22.5 655,-22.5 C655,-22.5 564.5,-66.5 564.5,-66.5 C564.5,-66.5 495.5,-34 495.5,-34 C495.5,-34 240.5,-17 240.5,-17 C240.5,-17 161.5,5.5 161.5,5.5 C161.5,5.5 107.5,45.5 107.5,45.5 C107.5,45.5 87.5,17.5 87.5,17.5 C87.5,17.5 -30,18 -30,18 C-30,18 -103,42 -103,42 C-103,42 -188,40 -188,40 C-188,40 -294,21.5 -294,21.5 C-294,21.5 -687,61.5 -687,61.5 C-687,61.5 -960,44 -960,44 C-960,44 -967,48 -967,48 C-967,48 -982.5,111 -982.5,111 C-982.5,111 -786.5,131 -786.5,131 C-786.5,131 -590.5,125 -590.5,125 C-590.5,125 -32.5,117 -32.5,117 C-32.5,117 327.5,93 327.5,93 C327.5,93 993.5,63 993.5,63 C993.5,63 965.5,-178.5 965.5,-178.5 C965.5,-178.5 945.5,-180.5 945.5,-180.5z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,0,0,1,960.5,261)" opacity="1" style="display: block;">
+                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                    <path fill="rgb(206,170,176)" fill-opacity="1"
+                                        d=" M967.5,-70 C967.5,-70 844.5,-29 844.5,-29 C844.5,-29 791.5,9 791.5,9 C791.5,9 525.5,9 525.5,9 C525.5,9 417.5,21 417.5,21 C417.5,21 246.5,87 246.5,87 C246.5,87 -85.5,72 -85.5,72 C-85.5,72 -406.5,87 -406.5,87 C-406.5,87 -960.5,84 -960.5,84 C-960.5,84 -977.5,91 -977.5,91 C-977.5,91 -968,223.5 -968,223.5 C-968,223.5 -827,183.5 -827,183.5 C-827,183.5 -643.5,157.5 -643.5,157.5 C-643.5,157.5 -432.5,185.5 -432.5,185.5 C-432.5,185.5 -54,154 -54,154 C-54,154 345.5,158 345.5,158 C345.5,158 503,190.5 503,190.5 C503,190.5 749.75,154.5 749.75,154.5 C749.75,154.5 853.25,214 853.25,214 C853.25,214 961,261.5 961,261.5 C961,261.5 967.5,-70 967.5,-70z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <!--?lit$835494772$-->
+            </div>
+        </dotlottie-player>
+    </div>
+
+    <section id="about" class=" bg-bgcolor2 relative py-16 lg:py-10 top-[2%] md:-top-[6%] lg:-top-[12%]">
+        <div class="heading flex flex-col justify-center items-center text-center pt-10 text-primary">
+            <span class="about">ABOUT US</span>
+            <div class="bar h-[6px] w-[150px] bg-primary"></div>
+        </div>
+        <div class="para lg:text-[18px] text-primary text-center px-[10%] mt-10 lg:px-[17%]">
+            Chez Starise, notre priorité est de vous accompagner dans la croissance de votre compte Onlyfans / Mym.
+            Notre objectif est d'augmenter vos gains tout en réduisant votre charge de travail, afin que vous puissiez
+            vous concentrer exclusivement sur la création de contenu. Nous mettons l'accent sur l'établissement de
+            relations durables, en instaurant une atmosphère de confiance, de coopération et de respect réciproque. Nous
+            guidons nos clients vers l'accomplissement de leur potentiel maximal sur les réseaux sociaux. En optimisant
+            votre trafic en ligne, en renforçant votre notoriété et en vous aidant à atteindre vos objectifs de revenus
+            de rêve.
+        </div>
+    </section>
+
+    <section id="results"
+        class="statement-section bg-bgcolor overflow-hidden border-b-[1px] border-t-[1px] h-[60vh] relative -top-[5%] lg:-top-[12%] border-primary">
+        <div class="flex justify-between flex-col lg:flex-row">
+            <div class="hidden lg:block">
+                <img src="./images/statement-1.avif" class="statement-1 ml-12 w-[450px] mt-24 statements" alt="">
+            </div>
+            <div class="flex gap-2 leading-8 flex-col text-primary text-center items-center h-full lg:mt-24 mt-5">
+                <div class="flex gap-2 items-center mb-2">
+                    <img src="./images/qoute.avif" class="qoute1" alt="">
+                    <img src="./images/qoute.avif" class="qoute2" alt="">
+                </div>
+                <div class="text-[20px] md:text-[40px]">
+                    <span class="pc-faire"> <span class="faire">FAIRE</span> <span class="moins"> MOINS -</span></span>
+                </div>
+                <div class="text-[20px] md:text-[40px]">
+                  <span class="pc-pour"><span class="pour">POUR</span> <span class="gagner">GAGNER PLUS + </span></span>
+                </div>
+                <p class="statement-p leading-4">
+                    <span class="dele"> Déléguez tout </span> à notre équipe, pour vous concentrer <br> sur la <span
+                        class="dele"> création de contenu </span>
+                </p>
+                <img src="./images/vertical-bar.avif" class="h-[30vh] invert hidden lg:block" alt="">
+            </div>
+            <div class="hidden lg:block">
+                <img src="./images/statement-2.webp" class="statement-2 mr-12 w-[450px] mt-16 statements" alt="">
+            </div>
+            <div class="flex lg:hidden gap-10 w-[85%] mr-42">
+                <div class="">
+                    <img src="./images/statement-2.webp"
+                        class=" ml-24 mt-16 statements statement-1 
+                         " alt="">
+                </div>
+                <div>
+                    <img src="./images/statement-1.avif"
+                        class="statement-2 mr-16 mt-24 statements 
+                         " alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="">
+        <div class="flex justify-center mt-16 md:mt-0  flex-col items-center">
+            <dotlottie-player class="sliders h-[10vh]"
+                src="https://framerusercontent.com/assets/nTWHHl0v0CFt0EDSq6mwvyyAE.zip" autoplay="true" loop=""
+                background="rgba(0, 85, 255, 0)" speed="1" direction="1"></dotlottie-player>
+            <img src="./images/vertical-bar.avif" class="h-[20vh] w-1 invert" alt="">
+        </div>
+        <div class="px-[7%]">
+            <div class="flex flex-col items-center lg:items-start justify-center lg:justify-start">
+                <span class="service-heading text-5xl text-primary lg:text-start text-center ">
+                    NOS SERVICES
+                </span>
+                <div class="bar2 h-[6px] mt-3 w-[200px] bg-primary"></div>
+            </div>
+            <div class="flex gap-10 mt-16 flex-col lg:flex-row">
+                <div class="lg:h-[500px] lg:w-1/3 border-b-[10px] border-primary bg-bgcolor2 px-8 py-12 ">
+                    <img src="./images/MiOjWs1LGRCHicioupJkGtZ18.avif" alt="">
+                    <div class="title uppercase text-primary text-3xl mt-3">
+                        AcquisitioN <br> de Trafic
+                    </div>
+                    <p class="text-primary card-p mt-6">
+                        Nous augmentons votre visibilité sur les plateformes privées en attirant un public cible grâce à
+                        nos <span class="strategies">stratégies et méthodes avancées.</span>
+                    </p>
+                    <ul class="card-ul text-primary mt-6">
+                        <li>
+                            • Gain d’abonnés
+                        </li>
+                        <li>
+                            • Augmentation du revenu
+                        </li>
+                        <li>
+                            • Growth Hacking
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:h-[500px] lg:w-1/3 border-b-[10px] border-primary bg-bgcolor2 px-8 py-12  ">
+                    <img src="./images/ViDnnRBUlSFAWodD3clbNh1TckI.avif" alt="">
+                    <div class="title uppercase text-primary text-3xl mt-3">
+                        GESTION <br> DU COMPTE
+                    </div>
+                    <p class="text-primary card-p mt-6">
+                        Nous gèrons tous les aspects quotidiens de votre profil, y compris la <span
+                            class="strategies">publication</span> et la <span class="strategies">planification du
+                            contenu</span>, de l’analyse de données et une gestion des messages.
+
+                    </p>
+                    <ul class="card-ul text-primary mt-6">
+                        <li>
+                            • Gain de temps
+                        </li>
+                        <li>
+                            • Gestion de la communauté
+                        </li>
+                        <li>
+                            • Calendrier de publication
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:h-[500px] lg:w-1/3 border-b-[10px] border-primary bg-bgcolor2 px-8 py-12  ">
+                    <img src="./images/3yf86X1jJL05pPAXU1zrnhv48Z8.avif" class="" alt="">
+                    <div class="title uppercase text-primary text-3xl mt-3">
+                        MARKETING <br> ET VENTE
+                    </div>
+                    <p class="text-primary card-p mt-6">
+                        Notre agence <span class="strategies">gère vos messages privées</span> et <span
+                            class="strategies">facilite la vente</span> de contenu privé sur OnlyFans et Mym. Cela vous
+                        permet d'augmenter vos revenus tout en économisant du temps.
+
+
+                    </p>
+                    <ul class="card-ul text-primary mt-6">
+                        <li>
+                            • Créations de contenus viraux
+                        </li>
+                        <li>
+                            • Conversions et tunnels de ventes
+                        </li>
+                        <li>
+                            • Scripts de ventes
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-10">
+                <img src="./images/vertical-bar.avif" class="h-[15vh] invert" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="ensem text-5xl lg:text-6xl text-primary text-center overflow-hidden">
+            <span class="seul">SEUL</span> VS <br> <span class="ensemble">ENSEMBLE</span>
+        </div>
+        <div class="px-[2%] lg:px-[15%] mt-10 flip-div">
+            <dotlottie-player id="lottie" src="https://framerusercontent.com/assets/d3CVj5b62fzixgBBzdyHj9xmk2Q.zip"
+                background="rgba(0, 85, 255, 0)" speed="1" direction="1" loop="false" autoplay="true">
+            </dotlottie-player>
+        </div>
+        <div class="flex justify-center my-6">
+            <img src="./images/vertical-bar.avif" class="h-[25vh] w-[2px] invert" alt="">
+        </div>
+    </section>
+
+
+    <section class="pb-10" id="faq">
+        <div class="faq text-6xl text-primary text-center w-full">
+            FAQ
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question"> <i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Pourquoi
+                    devrais-je travailler avec une agence ?</button>
+                <div class="faq-answer">
+                    <p>En collaborant avec une agence, les modèles peuvent se dédier entièrement à leur force, à savoir
+                        la création de contenu. Toutes les autres tâches ? C'est nous qui nous en occupons.
+                        <br> <br>
+                        Si vous vous interrogez sur la nécessité de faire appel à une agence, posez-vous la question
+                        suivante : "Est-ce que je dispose du temps, des ressources financières et de la liberté que je
+                        souhaite ?" Si la réponse est négative, il est peut-être temps de solliciter nos services.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Combien de
+                    temps dois-je travailler par jour ?</button>
+                <div class="faq-answer">
+                    <p>1h par jour suffise. Mais pour avoir des résulats optimaux, travailler entre 2h et 4h par jour
+                        est conseillé.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Vais-je garder
+                    l'accès à mon compte Mym/Onlyfans ?</button>
+                <div class="faq-answer">
+                    <p>Oui, vous gardez un accès totale de votre compte. Cependant, l'agence à aussi accès à celui ci
+                        pour des questions de gestions et de facilités.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Au bout de
+                    combien de temps verrai-je les résultats ?</button>
+                <div class="faq-answer">
+                    <p>Le délai pour observer des résultats varie en fonction du profil, allant d' 1 semaine à moins d'1
+                        jour.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Je n'ai pas de
+                    compte Onlyfans ou Mym, puis-je postuler ?</button>
+                <div class="faq-answer">
+                    <p>On est ouvert à tous types de profils, avec ou sans expérience. Le plus important pour nous c'est
+                        de recruter des modèles motivés.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Combien vos
+                    services coûtent ?</button>
+                <div class="faq-answer">
+                    <p>Vous n'avez rien à payer. Nous prenons uniquement une commission variant entre 50% et 30% sur le
+                        revenu totale généré par le compte. En fonction, des revenus généré par votre compte, la
+                        commission prise par notre agence baissera en fonction de paliers de revenus de votre compte
+                        afin de soutenir vos progrès.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question"><i class="fa-solid fa-xmark cross rotate-45 text-third"></i> Combien de
+                    temps vos contrats dure avec vos modèles ?</button>
+                <div class="faq-answer">
+                    <p>Pour chaque début de collaboration avec une nouvelle modèle, nous faisons une période d'essaie
+                        d'un mois afin de laisser à la modèle d'apprendre à connaitre comment nous travaillons et savoir
+                        de notre côté si nous souhaitons continuer ensemble. Par la suite, nous offrons une flexibilité
+                        sur la durée de nos contrats. Nous pouvons proposer une durée fixe de 3 à 6 mois renouvelable ou
+                        une période indéterminée avec la possibilité de partir à tout moment de l'agence avec un
+                        pré-avis d'une période d'un mois.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center pb-28">
+        <button
+            class="text-primary py-4 px-8 bg-bgcolor2 hover:text-[#fff] hover:bg-primary duration-300 ease font-bold text-3xl rounded-xl">
+            <span class="nous text-2xl lg:text-4xl">NOUS</span> <br>
+            <span class="rejoindre text-3xl lg:text-6xl">REJOINDRE</span>
+        </button>
+    </section>
+
+    <footer class="bg-[#1f61b7] py-10 text-white flex flex-col lg:flex-row justify-between w-full px-6 lg:px-[30%]">
+        <div class="flex flex-col gap-3">
+            <span class="name">Starise Agency</span>
+            <span class="copyright">© 2023. All rights reserved</span>
+        </div>
+        <div class="flex gap-20 mt-10 lg:mt-0 flex-col lg:flex-row">
+            <ul class="footer-ul">
+                <li>
+                    <a href="#about">À propos</a>
+                </li>
+                <li>
+                    <a href="#results">Résultats</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+            </ul>
+            <div>
+                <a class="flex gap-2 items-center" href="">
+                    <i class="fa-brands fa-twitter"></i><span class="hover:underline">Twitter</span>
+                </a>
+                <a class="flex gap-2 items-center mt-2" href="">
+                    <i class="fa-brands fa-instagram"></i><span class="hover:underline">Instagram</span>
+                </a>
+                <a class="flex gap-2 items-center hover:underline mt-10"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdM-LPNng0rYd0wpM9icCoDFK3Rm7VzgrNiqEfA6CjumZm6Og/viewform">
+                    <span>Nous rejoindre</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
