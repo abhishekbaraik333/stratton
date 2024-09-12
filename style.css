@@ -206,7 +206,7 @@ body {
 
 .statement-2 {
   transition: transform 1s ease, opacity 0.5s ease;
-  transform: translateY(100px); /* Initial offset before coming into view */
+  transform: translateY(80px); /* Initial offset before coming into view */
   opacity: 0; /* Initially hidden */
 }
 
