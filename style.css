@@ -288,18 +288,23 @@ body {
   transform: rotateX(90deg); /* Start flipped */
 }
 
-.statements{
-  scale: 100% !important;
-}
 
-@media (max-width:640px) {
-  .statements{
-    scale: 200% !important;
-  }
-}
+
 
 @media (min-width:641px) {
   .statements{
     scale: 150%;
+  }
+}
+
+@media (max-width:640px) {
+  .statements{
+    scale: 190% !important;
+  }
+}
+
+@media (min-width:1023px) {
+  .statements{
+    scale: 100%;
   }
 }
