@@ -297,8 +297,9 @@ body {
     scale: 200% !important;
   }
 }
-@media (max-width:1023px) {
+
+@media (min-width:641px) {
   .statements{
-    scale: 150% !important;
+    scale: 150%;
   }
 }
