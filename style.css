@@ -293,13 +293,13 @@ body {
 
 @media (min-width:641px) {
   .statements{
-    scale: 150%;
+    scale: 130%;
   }
 }
 
 @media (max-width:640px) {
   .statements{
-    scale: 190% !important;
+    scale: 130% !important;
   }
 }
 
